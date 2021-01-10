@@ -2,8 +2,8 @@ height_value = input("How much is height? ")
 base_value = input("How much is base? ")
 
 try:
-    height = int(height_value)
-    base = int(base_value)
+    height = float(height_value)
+    base = float(base_value)
 
     area = base * height
     amount_paint = area / 2
