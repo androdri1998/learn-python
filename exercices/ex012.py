@@ -1,4 +1,4 @@
-price_value = input("How many does the product cost? ")
+price_value = input("How many does the product cost? R$ ")
 
 try:
     price = float(price_value)

@@ -1,4 +1,4 @@
-income_value = input("How much is the income? ")
+income_value = input("How much is the income? R$ ")
 
 try:
     income = float(income_value)

@@ -1,4 +1,4 @@
-money_value = input("How many money do you have? ")
+money_value = input("How many money do you have? R$ ")
 
 try:
     money = float(money_value)
