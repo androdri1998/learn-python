@@ -1,10 +1,10 @@
-priceValue = input("How many does the product cost? ")
+price_value = input("How many does the product cost? ")
 
-if priceValue.isnumeric():
-    price = int(priceValue)
+try:
+    price = float(price_value)
     discount = price * 0.05
-    newPrice = price - discount
+    new_price = price - discount
     print("The product costs R$ {:.2f} and with a 5% discount costs R$ {:.2f}.".format(
-        price, newPrice))
-else:
+        price, new_price))
+except ValueError:
     print("It isn't a number")

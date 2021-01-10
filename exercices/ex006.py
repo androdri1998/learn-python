@@ -1,13 +1,13 @@
-inputValue = input('Type a number: ')
+input_value = input('Type a number: ')
 
-if inputValue.isnumeric():
-    intValue = int(inputValue)
-    doubleValue = intValue * 2
-    tripleValue = intValue * 3
-    squareRootValue = intValue ** (1/2)
+try:
+    int_value = int(input_value)
+    double_value = int_value * 2
+    triple_value = int_value * 3
+    square_root_value = int_value ** (1/2)
 
-    print("The number entered is {} and its double is {} and its triple is {} and its square root is {:.2f}".format(
-        intValue, doubleValue, tripleValue, squareRootValue))
+    print("The number entered is {:.2f} and its double is {:.2f} and its triple is {:.2f} and its square root is {:.2f}".format(
+        int_value, double_value, triple_value, square_root_value))
 
-else:
+except ValueError:
     print("It isn't a number")

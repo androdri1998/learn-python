@@ -1,11 +1,11 @@
-firstGrade = input('Type first grade: ')
-secondGrade = input('Type second grade: ')
+first_grade = input('Type first grade: ')
+second_grade = input('Type second grade: ')
 
-if firstGrade.isnumeric() and secondGrade.isnumeric():
-    firstGradeInt = int(firstGrade)
-    secondGradeInt = int(secondGrade)
-    gradeAverage = (firstGradeInt + secondGradeInt)/2
-    print("First grade is {} and second grade is {} and your average is {:.2f}".format(
-        firstGradeInt, secondGradeInt, gradeAverage))
-else:
+try:
+    first_grade_int = float(first_grade)
+    second_grade_int = float(second_grade)
+    grade_average = (first_grade_int + second_grade_int)/2
+    print("First grade is {:.1f} and second grade is {:.1f} and your average is {:.1f}".format(
+        first_grade_int, second_grade_int, grade_average))
+except ValueError:
     print("Some grade isn't a number")

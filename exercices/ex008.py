@@ -1,11 +1,11 @@
-metersValue = input('How many meters do you want to convert? ')
+meters_value = input('How many meters do you want to convert? ')
 
-if metersValue.isnumeric():
-    meters = int(metersValue)
+try:
+    meters = float(meters_value)
     centimeters = meters * 100
     millimeters = meters * 1000
 
-    print("{} meters contain {} centimeters and also can contain {} millimeters".format(
+    print("{:.2f} meters contain {:.0f} centimeters and also can contain {:.0f} millimeters".format(
         meters, centimeters, millimeters))
-else:
+except ValueError:
     print("It isn't a number")

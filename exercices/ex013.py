@@ -1,10 +1,10 @@
-incomeValue = input("How much is the income? ")
+income_value = input("How much is the income? ")
 
-if incomeValue.isnumeric():
-    income = int(incomeValue)
-    incrementIncome = income * 0.15
-    newIncome = income + incrementIncome
+try:
+    income = float(income_value)
+    increment_income = income * 0.15
+    new_income = income + increment_income
     print("Your current income is R$ {:.2f} and with a 15% increment will to be R$ {:.2f}.".format(
-        income, newIncome))
-else:
+        income, new_income))
+except ValueError:
     print("It isn't a number")
