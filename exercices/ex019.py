@@ -1,4 +1,4 @@
-from random import randint
+from random import choice
 
 first_student = input("Type first student: ")
 second_student = input("Type second student: ")
@@ -7,10 +7,9 @@ fourth_student = input("Type fourth student: ")
 
 try:
     students = [first_student, second_student, third_student, fourth_student]
-    random_number = randint(0, 3)
     
-    drawn_student = students[random_number]
+    drawn_student = choice(students)
     print('The drawn student is {}'.format(drawn_student))
 
 except ValueError:
-    print("Some value isn't a number")
+    print("Something went wrong")
