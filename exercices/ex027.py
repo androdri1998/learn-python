@@ -1,4 +1,4 @@
-fullname = input("Type a full name: ")
+fullname = str(input("Type a full name: ")).strip()
 
 fullname_splited = fullname.split()
 first_name = fullname_splited[0]
