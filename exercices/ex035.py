@@ -1,7 +1,7 @@
 try:
-    first_line = int(input("Type first line's length: "))
-    second_line = int(input("Type second line's length: "))
-    third_line = int(input("Type third line's length: "))
+    first_line = float(input("Type first line's length: "))
+    second_line = float(input("Type second line's length: "))
+    third_line = float(input("Type third line's length: "))
 
     sum_to_validate_first_line = second_line + third_line
     difference_to_validate_first_line = second_line - third_line

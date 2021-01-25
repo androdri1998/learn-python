@@ -1,6 +1,5 @@
 try:
-    speed = int(input("how fast is the car? KM "))
-    
+    speed = float(input("how fast is the car? KM "))
     
     traffic_ticket = 0
     traffic_ticket_per_km = 7
@@ -10,7 +9,7 @@ try:
         difference_speed = speed - max_speed
         traffic_ticket = difference_speed * traffic_ticket_per_km
     
-    print('you were fined R$ {:.2f}'.format(traffic_ticket) if traffic_ticket > 0 else 'you were not fined')
+    print('FINED! you were fined in R$ {:.2f}'.format(traffic_ticket) if traffic_ticket > 0 else 'Have a good day, drive with careful.')
     
 except ValueError:
     print("Value isn't a number")
