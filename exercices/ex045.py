@@ -14,11 +14,11 @@ def jokenpo ( move_one, move_two ):
 
     if ( move_one == move_two ):
         return draw
-    elif ( move_one == stone and move_two == paper or move_two == stone and move_one == paper):
+    elif ((move_one == stone and move_two == paper) or (move_two == stone and move_one == paper)):
         return paper
-    elif ( move_one == stone and move_two == scissors or move_two == stone and move_one == scissors):
+    elif ((move_one == stone and move_two == scissors) or (move_two == stone and move_one == scissors)):
         return stone
-    elif ( move_one == paper and move_two == scissors or move_two == paper and move_one == scissors):
+    elif ((move_one == paper and move_two == scissors) or (move_two == paper and move_one == scissors)):
         return scissors
 
 if ( move_user >= 1 and move_user <= 3 ):
