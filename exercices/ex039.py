@@ -8,13 +8,19 @@ current_year = int(current_date.split('-')[0])
 current_age = current_year - birth_year
 right_age_to_enlist = 18
 
-if ( current_age > right_age_to_enlist ):
+if (current_year < birth_year):
+    print("You aren't born yet!")
+    
+elif ( current_age > right_age_to_enlist ):
     years_passed = current_age - right_age_to_enlist
-    print("You should to go enlist! it's been {:.0f} years.".format(years_passed))
+    year_to_enlist = current_year - years_passed
+    print("You should to go enlist!")
+    print("it's been {:.0f} years. should have enlisted in {}!".format(years_passed, year_to_enlist))
 
 elif ( current_age < right_age_to_enlist ):
     years_to_go_enlist = right_age_to_enlist - current_age
-    print("You must enlist in {:.0f} years!".format(years_to_go_enlist))
+    year_to_enlist = current_year + years_to_go_enlist
+    print("You must enlist in {:.0f} years at {}!".format(years_to_go_enlist, year_to_enlist))
 
 else:
     years_passed = current_age - right_age_to_enlist
