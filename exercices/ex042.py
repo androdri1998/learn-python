@@ -24,12 +24,12 @@ try:
     is_a_valid_triangle = is_first_line_valid and is_second_line_valid and is_third_line_valid
     type_triangle = ""
     if ( is_a_valid_triangle ):
-        if ( first_line == second_line and  first_line == third_line ):
+        if first_line == second_line == third_line:
             type_triangle = "This is a equilateral triangle"
-        elif ( first_line == second_line or  first_line == third_line ):
-            type_triangle = "This is a isosceles triangle"
-        else:
+        elif first_line != second_line != third_line != first_line:
             type_triangle = "This is a scalene triangle"
+        else:
+            type_triangle = "This is a isosceles triangle"
 
     print()
     print("- " * 50)
