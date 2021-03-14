@@ -1,5 +1,5 @@
 price_product = float(input("How much is the product? R$ "))
-print()
+print("Payment methods:")
 print(" 1 - in cash")
 print(" 2 - 1x at credit card")
 print(" 3 - 2x at credit card")
